@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main Container to hold everything -->
+    <div class="mainContainer">
+      <!-- Container for Section 1 which will hold box 1, 2 and 3. -->
+      <div class="section1">
+        <!-- Box 1 will image, full name and title -->
+        <!-- Section1 is divided into Top which will inlucde box 1 and box 2 and Bottom which will include box3 -->
+        <div class="section1Top">
+          <!-- Box 1 will hold two element one for image and other a div for name and title -->
+          <div class="box1">
+            <img
+              src="/image.png"
+              alt="placeholder for resume image"
+              class="photo"
+            />
+            <div class="textBox1">
+              <h1>KUMAR BIJAYANANDA</h1>
+              <h3>Full Stack Developer/ Jr. Software Developer</h3>
+            </div>
+          </div>
+          <!-- Box 2 will hold gneneral inforamtion like address, phone, linkedIn etc. Since it needs to be 
+           center align we'll divide into two divs so they can be in a flex display with right and left aligned-->
+          <div class="box2">
+            <div class="leftBox2">
+              Name:<br />
+              Date of Birth:<br />
+              Address:<br />
+              Phone:<br />
+              Email:<br />
+              LinkedIn:
+            </div>
+            <div class="rightBox2">
+              Kumar Bijayananda<br />
+              March 17th 1982<br />
+              Hebron, KY 41048, US<br />
+              +1 859 420 3843<br />
+              kumarbijayananda@gmail.com<br />
+              https://www.linkedin.com/in/kumar-bijayananda-62945a19/
+            </div>
+          </div>
+        </div>
+
+        <!-- Section1 Bottom which include box 3 -->
+        <!-- Box 3 will biography/About me -->
+        <div class="box3">
+          <p>
+            Detail-oriented and technically skilled entry-level software
+            engineer with a Bachelor’s degree in Computer Science, hands-on
+            training in full-stack development, and 18 years of experience in
+            operations and supply chain. Proficient in JavaScript, React,
+            Node.js, and MongoDB, with a strong foundation in project
+            management, problem-solving, and agile methodologies. Ready to
+            leverage technical and analytical skills to contribute to impactful
+            software projects within a dynamic development team.
+          </p>
+        </div>
+        <hr />
+      </div>
+
+      <!-- Section 2 and Section 3 will be inside another div  -->
+      <div class="bodyContainer">
+        <!-- Section 2 which consists of employment and eduction inside box1 and box2 respectively-->
+        <section class="section2">
+          <!--box1 for employement  -->
+          <div class="box1">
+            <!-- drop down menu and the title for the Employment -->
+            <div class="dropdown">
+              <img src="dropdown.png" alt="image of drop down menu" />
+            </div>
+            <h2>&nbsp; EMPLOYMENT</h2>
+          </div>
+          <!-- Header for the employment section since they are far apart they need to be in two separate divs
+           so they can be aligned with space between -->
+          <div class="section2Header">
+            <div class="empCompany"><h3>Stairtek</h3></div>
+            <div class="years"><h3>2007-2024</h3></div>
+          </div>
+          <!-- These are different positions and explaination of work involved with that position -->
+          <!-- Prabably will changed into ul later and use the icon for the bullet -->
+          <h4>Supply Chain Specialist</h4>
+          <p>
+            Managed inventory, negotiated with vendors to achieve a 10% cost
+            reduction, and streamlined procurement processes.
+          </p>
+          <br />
+          <h4>Customer Service Manager</h4>
+          <p>
+            Led efforts to resolve complex customer issues and improve customer
+            satisfaction through collaboration with internal teams.
+          </p>
+          <br />
+          <h4>Online Product Manager</h4>
+          <p>
+            Established an online sales channel, generating over $10 million in
+            revenue by optimizing product listings and online marketing
+            strategies.
+          </p>
+          <br />
+          <h4>Account Manager</h4>
+          <p>
+            Supported custom sales inquiries and handled order issues to enhance
+            customer experience.
+          </p>
+          <br />
+          <!-- This is the next part in section 2 which I choose to be Notable Projects -->
+          <!-- used the same set up from before for consistency -->
+          <div class="box1">
+            <!-- drop down menu and the title for the Notable Projects -->
+            <div class="dropdown">
+              <img src="dropdown.png" alt="image of drop down menu" />
+            </div>
+            <h2>&nbsp; NOTABLE PROJECTS</h2>
+          </div>
+          <!-- Again, probably will switch to list and icon as bullet -->
+          <h4>E-Commerce Sales Platform</h4>
+          <p>
+            Developed an online merchandising strategy, driving over $10 million
+            in sales by managing digital content, pricing, and logistics.
+          </p>
+          <h4>Custom Product Quoting Tool</h4>
+          <p>
+            Created an Excel-based tool to generate accurate, tailored quotes,
+            improving the efficiency and accuracy of custom orders.
+          </p>
+
+          <!-- This is the third part of section 2 which I choose to be Education with same set up as before-->
+          <div class="box1">
+            <!-- drop down menu and the title for the Education -->
+            <div class="dropdown">
+              <img src="dropdown.png" alt="image of drop down menu" />
+            </div>
+            <h2>&nbsp; EDUCATION</h2>
+          </div>
+          <div class="section2Header">
+            <div class="empCompany"><h3>University of Kentucky</h3></div>
+            <div class="years"><h3>2001-2006</h3></div>
+          </div>
+          <h3></h3>
+          <p>Bachelor of Arts in Computer Science, with focus in Mathematics</p>
+          <br />
+          <p>
+            Merit-Based Scholarship from the UK Office of International Affairs
+          </p>
+        </section>
+        <!-- Section 3 will be inside aside container which will include programming skills and language -->
+        <aside class="section3">
+          <h3>PROGRAMMING SKILLS</h3>
+          <h4 id="a">Frontend</h4>
+          <p>
+            JavaScript (ES6+), React (JSX, Hooks, Lifecycle, State Management),
+            HTML, CSS, Responsive Web Design (Flexbox, Grid)
+          </p>
+          <h4>Backend</h4>
+          <p>
+            Node.js, Express.js, RESTful API development, Middleware integration
+          </p>
+          <h4>Database</h4>
+          <p>
+            MongoDB (CRUD operations, schema design, indexing, query
+            optimization)
+          </p>
+          <h4>Full-Stack Integration</h4>
+          <p>Connecting frontend and backend applications seamlessly</p>
+          <h4>Version Control</h4>
+          <p>Git, GitHub, branching strategies</p>
+          <h4>Web Performance Optimization</h4>
+          <p>Code splitting, caching, server-side rendering</p>
+          <h4>Project Management</h4>
+          <p>Agile methodologies, risk management, team collaboration</p>
+
+          <h3>LANGUAGES SKILLS</h3>
+          <h4>English</h4>
+          <h4>Nepali</h4>
+          <h4>Hindi</h4>
+          <h4></h4>
+        </aside>
+      </div>
+    </div>
+    <!-- <script src="" async defer></script -->
+  </body>
+</html>
